@@ -22,9 +22,9 @@ app.use(helmet())
 var cloudinary = require('cloudinary');
 
 cloudinary.config({
-    cloud_name: 'topuhit',
-    api_key: '293249121935429',
-    api_secret: 'ZpiI11yt3Vpkj0pHMN4Y1W2DApw'
+    cloud_name: 'dfdfdfgdfgdfgdfgdgdfg',
+    api_key: '293sdf2sdfgh4sdf9sdf121hdf93fhfhsdf5429',
+    api_secret: 'ZpiI1sghdf1yth3VpksdgfpHsghdfMNghsdf4ghYsdf1Wsghdf2sdfsfApghw'
 });
 
 var sizeOf = require('image-size');
