@@ -1,0 +1,82 @@
+<a href="<%= item.artwork.url %>" target="_blank"><img data-src="http://res.cloudinary.com/topuhit/image/upload/dpr_auto,w_auto,c_scale/e_sharpen/v<%= item.artwork.version %>/<%= item.artwork.public_id %>.<%= item.artwork.format %>" class="cld-responsive cld-hidpi img-responsive" alt="<%= item.title %> - <%= item.name %>"></a>
+<h2>Artwork: <%= item.title %>
+  <% if (item.award) { %>
+<i class="fa fa-certificate" aria-hidden="true" title="Awarded Artwork"></i>
+<% } %>
+<div class="viewssinglepagediv">
+<span id="viewssinglepage"><i class="fa fa-eye" aria-hidden="true"></i>&nbsp; Views: </span><span id="viewscount"><i class="fa fa-spinner fa-spin"></i></span>
+</div>
+</h2>
+<p><i class="fa fa-user" aria-hidden="true"></i>
+
+    Artist's Name:
+    <%- item.name %><br>
+        <i class="fa fa-circle" aria-hidden="true"></i> <%= item.mfa %>
+            <%= item.bfa %> - Batch:
+                <%= item.batch %>
+                    <br><i class="fa fa-university" aria-hidden="true"></i> University of Development Alternative, Dhaka.<br>
+                  </p>
+
+                 
+
+                  <div class="sharethis-inline-share-buttons"></div>
+                  <p></p>
+                    <span class="badge badge-info">This artwork was exhibited   <% if (item.award) { %> and awarded <% } %>at the Art Exhibition (2015) of UODA at National Art Gallery of Bangladesh.</span>
+                   
+<span class="badge badge-info"><i class="fa fa-copyright" aria-hidden="true"></i>&nbsp;All images are copyright to their respective owners. | 
+              <i class="fa fa-user" aria-hidden="true"></i>&nbsp;Posted by: <a href="http://tariquldesign.com" target="_blank">Md. Tariqul Islam</a> | 
+           <i class="fa fa-calendar-o" aria-hidden="true"></i>&nbsp;Posted: <time class="timeago" datetime="<%= item.artwork.created_at %>" title="<%= item.artwork.created_at %>"><%= item.artwork.created_at %></time>
+</span>
+                    <span class="badge badge-info">For any kind of suggestion, correction, comment or query please contact: <i class="fa fa-address-card" aria-hidden="true"></i>&nbsp;Md. Tariqul Islam | 
+              <i class="fa fa-envelope" aria-hidden="true"></i>&nbsp;E-mail: <a href="mailto:topu.hit@gmail.com" target="_blank">topu.hit@gmail.com</a> | 
+             <i class="fa fa-phone-square" aria-hidden="true"></i>&nbsp;Mobile: 01921244808
+                </span>
+
+<div class="vision">
+  <h3>Dominant Colors</h3>
+      <% if (colors) { %>
+        <div class="colors" style="display: inline-flex; width: 100%">
+            <% colors.forEach(function(item) { %>
+                <div style="width: 10%; height: 40px; background-color: rgb(<%= item.color.red%>,<%= item.color.green%>,<%= item.color.blue%>);"></div>
+                <%  }); %>
+                    <% } %>
+        </div>
+          <h3>Tags</h3>
+        <% if (tag) { %>
+            <div class="tag" style="display: inline-flex; width: 100%; font-size: 16px;">
+                  <p>
+                <% tag.forEach(function(item) { %>
+                        <%= item.description%>, 
+                    <%  }); %>
+                       </p>
+                        <% } %>
+            </div>
+           <h3>Visually Similar Images</h3>
+
+<% speakers.forEach(function(item) { %>
+
+
+<a href="<%= item.artwork.url %>" target="_blank"><img data-src="http://res.cloudinary.com/topuhit/image/upload/w_200,h_200,c_thumb/v<%= item.artwork.version %>/<%= item.artwork.public_id %>.<%= item.artwork.format %>" id="thumb-image" class="cld-responsive cld-hidpi img-responsive activeimage" alt="<%= item.title %> - <%= item.name %>"></a>
+
+<%  }); %>
+
+                <% if (visually) { %>
+                    <% visually.forEach(function(item) { %>
+                     <a href="<%= item.url %>" target="_blank">  <img src="http://a1.res.cloudinary.com/topuhit/image/fetch/w_200,h_200,c_thumb/<%= item.url %>"></a> 
+                        <%  }); %>
+                            <% } %>
+</div>
+
+
+<h3>Other artworks of this batch</h3>
+<div id="related"></div>
+
+
+<h3>Artworks of the next batch</h3>
+<div id="nextrelated"></div>
+
+
+     <% include ../pagination.ejs %>
+
+     <% include ../footer.ejs %>
+     
