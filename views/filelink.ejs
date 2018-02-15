@@ -138,7 +138,7 @@ axios.get('https://uodaexhibition2015.herokuapp.com/related/'+ <% if (batch) { %
     for (var i = 0, len = response.data.length; i < len; i++) {
 
 
-$("#related").append("<div class=\"marginauot\"><a href=\"https://uodaexhibition2015.herokuapp.com/" + response.data[i].seourl + "\"><img src=\"https://res.cloudinary.com/topuhit/image/upload/w_200,h_200,c_thumb/" + response.data[i].artwork.public_id + "." + response.data[i].artwork.format + "\" srcset=\"https://res.cloudinary.com/topuhit/image/upload/w_200,h_200,c_thumb/" + response.data[i].artwork.public_id + "." + response.data[i].artwork.format + " 1x, https://res.cloudinary.com/topuhit/image/upload/w_400,h_400,c_thumb/" + response.data[i].artwork.public_id + "." + response.data[i].artwork.format + " 2x\"><br><p class=\"similar\">" + response.data[i].name + "</p><p class=\"similar2\">" + response.data[i].batch + "</p></div></a>");
+$("#related").append("<div class=\"marginauot\"><a href=\"http://uodaexhibition2015.herokuapp.com/" + response.data[i].seourl + "\"><img src=\"https://a2.res.cloudinary.com/topuhit/image/upload/w_200,h_200,c_thumb/" + response.data[i].artwork.public_id + "." + response.data[i].artwork.format + "\" srcset=\"https://a2.res.cloudinary.com/topuhit/image/upload/w_200,h_200,c_thumb/" + response.data[i].artwork.public_id + "." + response.data[i].artwork.format + " 1x, https://a2.res.cloudinary.com/topuhit/image/upload/w_400,h_400,c_thumb/" + response.data[i].artwork.public_id + "." + response.data[i].artwork.format + " 2x\"><br><p class=\"similar\">" + response.data[i].name + "</p><p class=\"similar2\">" + response.data[i].batch + "</p></div></a>");
 
 }
 
@@ -162,7 +162,7 @@ axios.get('https://uodaexhibition2015.herokuapp.com/nextrelated/'+ nextbatch)
 
 
 
-$("#nextrelated").append("<div class=\"marginauot\"><a href=\"https://uodaexhibition2015.herokuapp.com/" + response.data[i].seourl + "\">\n<img src=\"https://res.cloudinary.com/topuhit/image/upload/w_200,h_200,c_thumb/" + response.data[i].artwork.public_id + "." + response.data[i].artwork.format + "\"  srcset=\"https://res.cloudinary.com/topuhit/image/upload/w_200,h_200,c_thumb/" + response.data[i].artwork.public_id + "." + response.data[i].artwork.format + " 1x, https://res.cloudinary.com/topuhit/image/upload/w_400,h_400,c_thumb/" + response.data[i].artwork.public_id + "." + response.data[i].artwork.format + " 2x\"><br>\n<p class=\"similar\">" + response.data[i].name + "</p>\n<p class=\"similar2\">" + response.data[i].batch + "</p>\n</a>\n</div>");
+$("#nextrelated").append("<div class=\"marginauot\"><a href=\"http://uodaexhibition2015.herokuapp.com/" + response.data[i].seourl + "\">\n<img src=\"http://a2.res.cloudinary.com/topuhit/image/upload/w_200,h_200,c_thumb/" + response.data[i].artwork.public_id + "." + response.data[i].artwork.format + "\"  srcset=\"http://a2.res.cloudinary.com/topuhit/image/upload/w_200,h_200,c_thumb/" + response.data[i].artwork.public_id + "." + response.data[i].artwork.format + " 1x, http://a2.res.cloudinary.com/topuhit/image/upload/w_400,h_400,c_thumb/" + response.data[i].artwork.public_id + "." + response.data[i].artwork.format + " 2x\"><br>\n<p class=\"similar\">" + response.data[i].name + "</p>\n<p class=\"similar2\">" + response.data[i].batch + "</p>\n</a>\n</div>");
 
 
 
