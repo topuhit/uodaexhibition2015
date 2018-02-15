@@ -1,4 +1,4 @@
-<a href="<%= item.artwork.url %>" target="_blank"><img data-src="http://res.cloudinary.com/topuhit/image/upload/dpr_auto,w_auto,c_scale/e_sharpen/v<%= item.artwork.version %>/<%= item.artwork.public_id %>.<%= item.artwork.format %>" class="cld-responsive cld-hidpi img-responsive" alt="<%= item.title %> - <%= item.name %>"></a>
+<a href="<%= item.artwork.url %>" target="_blank"><img data-src="https://res.cloudinary.com/topuhit/image/upload/dpr_auto,w_auto,c_scale/e_sharpen/v<%= item.artwork.version %>/<%= item.artwork.public_id %>.<%= item.artwork.format %>" class="cld-responsive cld-hidpi img-responsive" alt="<%= item.title %> - <%= item.name %>"></a>
 <h2>Artwork: <%= item.title %>
   <% if (item.award) { %>
 <i class="fa fa-certificate" aria-hidden="true" title="Awarded Artwork"></i>
@@ -56,13 +56,13 @@
 <% speakers.forEach(function(item) { %>
 
 
-<a href="<%= item.artwork.url %>" target="_blank"><img data-src="http://res.cloudinary.com/topuhit/image/upload/w_200,h_200,c_thumb/v<%= item.artwork.version %>/<%= item.artwork.public_id %>.<%= item.artwork.format %>" id="thumb-image" class="cld-responsive cld-hidpi img-responsive activeimage" alt="<%= item.title %> - <%= item.name %>"></a>
+<a href="<%= item.artwork.url %>" target="_blank"><img data-src="https://res.cloudinary.com/topuhit/image/upload/w_200,h_200,c_thumb/v<%= item.artwork.version %>/<%= item.artwork.public_id %>.<%= item.artwork.format %>" id="thumb-image" class="cld-responsive cld-hidpi img-responsive activeimage" alt="<%= item.title %> - <%= item.name %>"></a>
 
 <%  }); %>
 
                 <% if (visually) { %>
                     <% visually.forEach(function(item) { %>
-                     <a href="<%= item.url %>" target="_blank">  <img src="http://a1.res.cloudinary.com/topuhit/image/fetch/w_200,h_200,c_thumb/<%= item.url %>"></a> 
+                     <a href="<%= item.url %>" target="_blank">  <img src="https://res.cloudinary.com/topuhit/image/fetch/w_200,h_200,c_thumb/<%= item.url %>"></a> 
                         <%  }); %>
                             <% } %>
 </div>
