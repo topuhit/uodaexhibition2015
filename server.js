@@ -397,7 +397,7 @@ app.get('/:id', function(req, res, next) {
             console.log('Request Id:', req.params.id);
 
             axios.all([
-                    axios.get('http://localhost:8000/vision/' + req.params.id)
+                    axios.get('/vision/' + req.params.id)
 
                 ])
                 .then(axios.spread(function(userResponse, resmo) {
