@@ -607,3 +607,6 @@ div.mainimage>div>div.vision>a>img {
 
 }
 
+body > div.app-navigation-mobile > div > a {
+	margin-right: 5px;
+}
