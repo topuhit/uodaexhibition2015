@@ -27,9 +27,9 @@ legend{color:inherit;display:table;max-width:100%;padding:0;white-space:normal}t
 ::-webkit-input-placeholder{color:inherit;opacity:0.54}
 ::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}
 /* End extract */
-html,body{font-family:Verdana,sans-serif;font-size:15px;line-height:1.5}html{overflow-x:hidden}
+html,body{font-family:"Helvetica Neue", Helvetica, Arial, sans-serif;font-size:15px;line-height:1.5}html{overflow-x:hidden}
 h1{font-size:24px}h2{font-size:24px}h3{font-size:20px}h4{font-size:20px}h5{font-size:18px}h6{font-size:16px}.w3-serif{font-family:serif}
-h1,h2,h3,h4,h5,h6{font-family:"Segoe UI",Arial,sans-serif;font-weight:400;margin:10px 0}.w3-wide{letter-spacing:4px}
+h1,h2,h3,h4,h5,h6{font-family:"Helvetica Neue", Helvetica, Arial, sans-serif;font-weight:400;margin:10px 0}.w3-wide{letter-spacing:4px}
 hr{border:0;border-top:1px solid #eee;margin:20px 0}
 .w3-image{max-width:100%;height:auto}img{margin-bottom:-5px}a{color:inherit}
 .w3-table,.w3-table-all{border-collapse:collapse;border-spacing:0;width:100%;display:table}.w3-table-all{border:1px solid #ccc}
@@ -222,7 +222,7 @@ hr{border:0;border-top:1px solid #eee;margin:20px 0}
 body {
     width: 80%;
     margin: 0 auto;
-    font-family: monospace;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-size: 18px;
 }
 
@@ -232,7 +232,7 @@ h3,
 h4,
 h5,
 h6 {
-    font-family: "Segoe UI", Arial, sans-serif;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-weight: bold;
     margin: 10px 0;
 }
@@ -271,7 +271,7 @@ p {
 .badge-info {
     color: #000;
     background-color: rgba(193, 245, 254, 0.439);
-    font-family: Arial;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-size: 12px;
 }
 
@@ -485,13 +485,13 @@ div.mainimage>div>div.vision>a>img {
 .about {
 	max-width: 900px;
     margin: auto;
-    font-family: Georgia,"Times New Roman", Times, serif;
-    color: #424242;
-    font-size: 1.3em;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color: #0F0F0F;
+    font-size: 1em;
 }
 
 .about h3 {
-	font-size: 1.6em;
+	font-size: 1.3em;
 }
 
 

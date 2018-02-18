@@ -18,5 +18,10 @@ body > div > div > a > img {
 }
 
 
+.viewssinglepagediv {
+    float: initial;
+    margin-left: 0px;
+}
+
 }
 
